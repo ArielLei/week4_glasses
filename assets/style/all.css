@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1.5; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  display: block;
+  text-decoration: none; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle; }
+
+h1, h2, h3 {
+  font-weight: bold; }
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.text-white {
+  color: #fff; }
+
+.block {
+  display: block; }
+
+.hidden {
+  display: none; }
+
+.inline-block {
+  display: inline-block; }
+
+.m-auto {
+  margin: auto; }
+
+.overflow-hidden {
+  overflow: hidden; }
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.items-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.items-start {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+
+.justify-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.justify-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.content-start {
+  -ms-flex-line-pack: start;
+      align-content: flex-start; }
+
+body {
+  font-family: "Roboto", "Noto Sans", sans-serif; }
+
+.container {
+  width: 1110px;
+  margin: 0 auto; }
+  @media (max-width: 768px) {
+    .container {
+      width: 90%;
+      background-color: red; } }
+  @media (max-width: 576px) {
+    .container {
+      background-color: blue; } }
+
+.header {
+  background-color: #aa0601;
+  padding: 30px 5%; }
+  .header a {
+    padding: 5px 10px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #fff;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); }
+    .header a:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 35px;
+      height: 3px;
+      background: #fff;
+      pointer-events: none;
+      width: 0;
+      -webkit-transition: all 0.3s 0s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+      -o-transition: all 0.3s 0s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+      transition: all 0.3s 0s cubic-bezier(0.455, 0.03, 0.515, 0.955); }
+    .header a:hover:after {
+      width: 80%; }
+
+.footer {
+  background-color: #aa0601;
+  padding: 32px 0px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300; }
+  .footer .footerNav li {
+    padding-right: 48px; }
+  .footer .social li {
+    padding-left: 32px; }
+  .footer a {
+    color: #fff; }
+    .footer a:hover {
+      color: antiquewhite; }
+  .footer .con {
+    margin: 20px 0 24px 0; }
+    .footer .con a {
+      font-size: 36px;
+      line-height: 54px;
+      margin-top: 16px; }
+    .footer .con img {
+      margin-right: 20px; }
+  .footer .copyright {
+    border-top: 1px solid #fff;
+    padding-top: 32px; }
+    .footer .copyright .privacyList {
+      font-size: 14px;
+      line-height: 21px; }
+      .footer .copyright .privacyList li {
+        padding-left: 48px; }
+
+/*# sourceMappingURL=all.css.map */
