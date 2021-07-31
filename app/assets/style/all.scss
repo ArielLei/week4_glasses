@@ -1,0 +1,12 @@
+@import 'variables'; // 變數
+@import 'reset'; // reset.css
+@import 'grid'; // 斷點
+@import "util"; // 工具類 class
+@import 'layout'; // 共通區塊
+
+// 頁面設計
+@import 'page/index';
+@import 'page/location';
+
+
+
