@@ -8,27 +8,28 @@
   <title>首頁</title>
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
-
 <body>
- <div class="header text-white flex justify-between">
+<header class="text-white d-flex justify-between">
   <div class="logo"><a href="index.html"><img src="https://hexschool.github.io/webLayoutTraining1st/week3/logo.png" alt="Logo"></a></div>
-  <menu>
-    <ul class="flex">
+  <nav class="menu">
+    <ul class="row">
       <li><a href="#">系列鏡框</a></li>
       <li><a href="#">門市據點</a></li>
       <li><a href="#">部落格</a></li>
       <li><a href="#">常見問題</a></li>
     </ul>
-  </menu>
+  </nav>
+</header>
+
+
+<!-- 大圖 -->
+<div class="banner">
+  <div class="container auto-height d-flex justify-end items-center">
+    <h1 class="">Promise-Desert2020 早春系列<span>看得清，才能看得遠</span> </h1>
+  </div>
 </div>
 
-  
-<div class="banner flex items-center">
- <div class="container row justify-end">
-  <h1 class="">Promise-Desert2020 早春系列<span>看得清，才能看得遠</span> </h1>
- </div>
-</div>
-
+<!-- 服務內容 -->
 <div class="service">
   <div class="container">
     <div class="title text-primary">用專業的心，做專業的事</div>
@@ -57,25 +58,26 @@
   </div>
 </div>
 
+<!-- 經典 -->
 <div class="classicProduct">
   <div class="container">
     <div class="title text-primary">經典系列鏡框</div>
     <ul>
-      <li class="row items-center">
+      <li class="d-flex items-center">
         <img class="pic" src="https://hexschool.github.io/webLayoutTraining1st/week3/product-1.png" alt="optical">
         <p class="text-secondary italic uppercase flex items-center">
           <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-diamond.svg" alt="">
           optical
         </p>
       </li>
-      <li class="row row-reverse items-center">
+      <li class="d-flex middle items-center">
         <img class="pic" src="https://hexschool.github.io/webLayoutTraining1st/week3/product-2.png" alt="sunglasses">
         <p class="text-secondary italic uppercase flex items-center">
           <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-sun.svg" alt="">
           sunglasses
         </p>
       </li>
-      <li class="row items-center">
+      <li class="d-flex items-center">
         <img class="pic" src="https://hexschool.github.io/webLayoutTraining1st/week3/product-3.png" alt="functional">
         <p class="text-secondary italic uppercase flex items-center">
           <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-thunder.svg" alt="">
@@ -86,15 +88,16 @@
   </div>
 </div>
 
+<!-- 聯名 -->
 <div class="seriesProduct">
   <div class="container">
     <div class="title text-white">聯名設計鏡框</div>
-    <ul class="flex justify-between">
-      <li class="flex items-center justify-center"> 
+    <ul class="d-flex">
+      <li class="d-flex items-center justify-center"> 
         <a href=""><img src="https://hexschool.github.io/webLayoutTraining1st/week3/product-8.png" alt="YOUTH"> </a>
         <p class="">Double A+</p>
       </li>
-      <li class="flex items-center justify-center">
+      <li class="d-flex items-center justify-center">
         <a href=""><img src="https://hexschool.github.io/webLayoutTraining1st/week3/product-9.png" alt="YOUTH"> </a>
         <p class="">YOUTH</p>
       </li>
@@ -102,6 +105,7 @@
   </div>
 </div>
 
+<!-- 推薦 -->
 <div class="recommend">
   <div class="container">
     <div class="title text-primary">顧客推薦</div>
@@ -142,6 +146,7 @@
   </div>
 </div>
 
+<!-- 聯絡 -->
 <div class="contact">
   <div class="container">
     <div class="title text-black">聯絡我們</div>
@@ -176,36 +181,40 @@
 
 
 
-<div class="footer text-white">
+
+
+
+
+<footer class="footer text-white">
   <div class="container">
-   <div class="flex justify-between items-center">
-    <ul class="footerNav row">
+   <div class="footerTop">
+    <ul class="footerNav d-flex">
       <li><a href="#">首頁</a></li>
       <li><a href="#">系列鏡框</a></li>
       <li><a href="#">門市據點</a></li>
       <li><a href="#">部落格</a></li>
       <li><a href="#">常見問題</a></li>
     </ul>
-    <ul class="social row">
+    <ul class="social d-flex">
       <li><a href="#"><img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-fb.svg" alt="fb"></a></li>
       <li><a href="#"><img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-ig.svg" alt="ig"></a></li>
       <li><a href="#"><img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-line.svg" alt="line"></a></li>
     </ul>
     </div>
-    <div class="con row column">
+    <div class="con d-flex column">
       <a href="tel:+0800-000-000"><img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-phone.svg" alt="phone">0800-000-000</a>
       <a href="mailto:glasses@business.com"><img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-mail.svg" alt="mail">glasses@business.com</a>
     </div>
 
-    <div class="copyright flex justify-between">
+    <div class="copyright d-flex">
       <p>Copyright © 2020 Glasses.All rights reserved.</p>
-      <ul class="privacyList row">
+      <ul class="privacyList d-flex">
         <li><a href="">隱私權政策</a></li>
         <li><a href="">服務條款</a></li>
       </ul>
     </div>
 
   </div>
-</div>
+</footer>
 </body>
 </html>
