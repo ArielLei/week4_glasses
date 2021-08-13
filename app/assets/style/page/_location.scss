@@ -1,0 +1,114 @@
+.location{
+  h2{
+    font-size: 48px;
+    border-left: 10px solid $color-secondary;
+    padding-left: 16px;
+    margin-bottom: 65px;
+    @include phone {
+      font-size: 28px;
+    }
+  }
+}
+
+.dropdown{
+  font-size: 24px;
+  @include phone {
+    font-size: 14px;
+  }
+  .select {
+    font-size: 18px;
+    width: 324px;
+    padding: 10px;
+    color: #495057;
+    margin-left: 22px;
+    @include tablet {
+      width: 237px;
+      font-size: 16px;
+      margin-left: 20px;
+    }
+    @include phone {
+      width: 277px;
+      font-size: 14px;
+      margin-left: 12px;
+    }
+  }
+}
+
+.locationInner{
+  margin-top: 32px;
+  min-height: 422px;
+  @include tablet {
+    flex-direction: column;  
+  }
+
+  .infor{
+    width: 40%;
+    flex-direction: column;
+    @include tablet {
+      width: 100%;
+      flex-direction: row;
+    }
+    @include phone {
+      flex-direction: column;
+    }
+    .pic{
+      width: 100%;
+      @include tablet {
+        width: 50%;
+        margin-right: 15px;
+      }
+      @include phone {
+        width: 100%;
+        margin-right: 0px;
+      }
+    }
+    .text{
+      width: 100%;
+      border: 1px solid #00000020;
+      @include tablet {
+        width: 50%;
+        margin-left: 15px;
+      }
+      @include phone {
+        width: 100%;
+        margin-left: 0px;
+      }
+    }
+  }
+  h3{
+    font-size: 24px;
+    font-weight: 400;
+    border: 1px solid #00000020;
+    padding: 12px 24px;
+  }
+  ul{
+    padding: 12px 24px;
+    font-size: 20px;
+    @include tablet {
+      font-size: 14px;
+    }
+    li{
+      padding: 4px 0;
+      img{
+        margin-right: 10px;
+      }
+    }
+  }
+  .map{
+    width: 60%;
+    margin-left: 30px;
+    @include tablet {
+      width: 100%;
+      margin-left:0px;
+      margin-top: 30px;
+    }
+    iframe{
+      width: 100%;
+      height: 100%;
+      @include tablet {
+        min-height: 422px;
+      }
+    }
+  }
+
+}

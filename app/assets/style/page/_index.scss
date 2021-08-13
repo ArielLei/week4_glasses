@@ -1,0 +1,258 @@
+.banner{
+  background: url(https://hexschool.github.io/webLayoutTraining1st/week3/banner.png) no-repeat center center;
+  background-size: cover;
+  height: 840px;
+  color:$color-primary;
+  text-align: right;
+  h1{
+    font-size: 36px;
+    line-height: 72px;
+    font-weight: 400;
+    @include tablet {
+      font-size: 20px;
+      line-height: 60px;
+    }
+    @include phone {
+      font-size: 16px;
+      line-height: 32px;
+    }
+    span{
+      display: block;
+      font-size: 64px;
+      font-weight: 700;
+      @include tablet {
+        font-size: 48px;
+      }
+      @include phone {
+        font-size: 32px;
+      }
+    }
+  }
+  @include phone {
+    height: 394px;
+  }
+}
+
+.service{
+  background-color: $color-light;
+  @include tablet {
+    padding: 40px 0;
+  }
+  @include phone {
+    padding: 32px 0;
+  }
+  li{
+    width: 255px;
+    @include tablet {
+      width: 35%;
+      margin: 40px;
+    }
+    @include phone {
+      width: 80%;
+      margin: 0 auto;
+      margin-bottom: 40px;
+    }
+  }
+  img{
+    height: 84px;
+    width: 84px;
+    margin-bottom: 24px;
+  }
+  h2{
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  p{
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.classicProduct{
+  .middle{
+    flex-direction: row-reverse;
+    @include tablet {
+      flex-direction: row;
+    }
+  }
+  li{
+    margin-bottom: 32px;
+  }
+  .pic{
+    width: 60%;
+    @include phone {
+      width:100%;
+    }
+  }
+  p{
+    font-size: 48px;
+    line-height: 72px;
+    font-weight: 700;
+    margin: 0 32px;
+    @include tablet {
+      font-size: 24px;
+    }
+    @include phone {
+      position: absolute;
+      text-align: center;
+      width: 100%;
+      margin: 0;
+    }
+    img{
+      margin-right: 10px;
+      @include tablet {
+        width: 36px;
+      }
+    }
+  }
+}
+
+.seriesProduct{
+  background: url(https://hexschool.github.io/webLayoutTraining1st/week3/bg.png) no-repeat center center;
+  background-size: cover;
+  min-height: 705px;
+  @include tablet {
+    min-height: 452px;
+  }
+  ul{
+    @include phone {
+      flex-direction: column;
+    }
+  }
+  li{
+    position: relative;
+    margin: 15px;
+    @include phone {
+     
+    }
+  }
+  a{
+    &::before{
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-color: rgba(255,255,255,0.5);
+      transition:all 0.5s;
+    }
+    &:hover{
+      &::before{
+       background-color: rgba(255,255,255,0);
+      }
+    }
+  }
+  p{
+    font-size: 72px;
+    font-weight: 700;
+    position: absolute;
+    color: $color-secondary;
+    pointer-events: none;
+    @include tablet {
+      font-size: 32px;
+    }
+  }
+}
+
+.recommend{
+  li{
+    width: 255px;
+    box-shadow: 0px 2px 6px #00000029;
+    border: 1px solid #DEE2E6;
+    border-radius: 4px;
+    img{
+     border-radius: 4px 4px 0 0;
+     width: 100%;
+    }
+    @include tablet {
+      width: calc((100% - 30px)/2);
+      margin-bottom: 32px;
+    }
+    @include phone {
+      width: 100%;
+    }
+  }
+  .content{
+    height: 204px;
+    padding: 16px;
+    color: #212529;
+    font-size: 14px;
+    line-height: 21px;
+    position: relative;
+  }
+  .name{
+    margin-bottom: 8px;
+  }
+  .des{
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .time{
+    color: #707070;
+    position: absolute;
+    bottom: 16px;
+  }
+}
+
+.contact{
+  background-color: $color-light;
+  .form{
+    max-width: 730px;
+    @include tablet {
+      max-width: 450px;
+    }
+  }
+  .formGroup{
+    margin-bottom: 16px;
+  }
+  p{
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+  input, textarea {
+    display: block;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background: transparent;
+    border: 1px solid #000;
+    padding: 14px 16px;
+  }
+  label {
+    display: inline-block;
+    margin-bottom: 4px;
+    @include tablet {
+      font-size: 14px;
+      line-height: 21px;
+    }
+  }
+  input[type="checkbox"] {
+    display: unset;
+    width: auto;
+  }
+  .submit {
+    width: 350px;
+    height: 54px;
+    border: 0;
+    display: block;
+    margin: 40px auto 0 auto;
+    background-color: $color-secondary;
+    color: #fff;
+    font-size: 16px;
+    @include tablet {
+      width: 210px;
+      height: 40px;
+    }
+    @include phone {
+      width: 165px;
+      height: 36px;
+    }
+    &:hover{
+      background-color: $color-primary;
+    }
+  }
+}
