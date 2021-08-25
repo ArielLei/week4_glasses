@@ -1,4 +1,4 @@
-/* text style */
+// text style
 
 .italic{
   font-style: italic;
@@ -22,6 +22,23 @@
 
 .text-secondary{
   color: $color-secondary;
+}
+
+.text-center{
+  text-align: center;
+}
+
+// 字重
+.fw-light{
+  font-weight: 200;
+}
+
+.fw-regular{
+  font-weight: 300;
+}
+
+.fw-medium{
+  font-weight: 500;
 }
 
 .m-auto{
@@ -99,7 +116,15 @@
   align-items: flex-start; //對齊最上面的 cross start
 }
 
+.items-end{
+  align-items: flex-end; //對齊最上面的 cross start
+}
+
 //交錯軸多行對齊
 .content-start{
   align-content: flex-start; //對齊最上面的 cross start
+}
+
+.content-center{
+  align-content: center; //對齊最上面的 cross start
 }
